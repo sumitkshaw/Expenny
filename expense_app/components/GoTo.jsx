@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation"
 
 export default function GoTo() {
 
-    const isAuthenticated = false
+    const isAuthenticated = true
     const path = usePathname()
 
     return (
@@ -20,6 +20,9 @@ export default function GoTo() {
                     </Link>
                     
                 </>
+            )}
+            {(isAuthenticated && path == '/dashboard') && (
+                <button>Logout</button>
             )}
         </div>
     )
