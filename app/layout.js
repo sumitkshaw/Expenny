@@ -3,6 +3,7 @@ import './fanta.css';
 import Head from "./Head";
 import Link from "next/link";
 import GoTo from "@/components/GoTo";
+import { AuthProvider } from "@/context/AuthContext";
 
 export const metadata = {
   title: "Expenny ⋅ The Subscription Tracker",
@@ -51,6 +52,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <Head />
+      <AuthProvider>
       <body>
         {header}
         <div className="full-line" />
@@ -60,6 +62,7 @@ export default function RootLayout({ children }) {
         </main>
         {footer}
       </body>
+      </AuthProvider>
     </html>
   );
 }
