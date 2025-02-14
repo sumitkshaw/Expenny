@@ -1,10 +1,12 @@
+import { useAuth } from "@/context/AuthContext"
 import { calculateSubscriptionMetrics, subscriptions } from "@/utils"
 
 export default function SubscriptionSummary() {
-    const summary = calculateSubscriptionMetrics(subscriptions)
+    const { userData } = useAuth()
+    const summary = calculateSubscriptionMetrics(userData.subscriptions)
     console.log(summary)
-    const emojis = ['🔥', '✅', '⭐️', '⚡️', '🎉', '✨', '🏆', '🌼', '🌱', '🐛', '🐙', '🪼']
 
+    const emojis = ['🔥', '✅', '⭐️', '⚡️', '🎉', '✨', '🏆', '🌼', '🌱', '🐛', '🐙', '🪼']
 
     return (
         <section>

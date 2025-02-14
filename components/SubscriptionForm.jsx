@@ -1,40 +1,22 @@
 'use client'
 
+import { useAuth } from "@/context/AuthContext"
 import { useState } from "react"
 
-export default function SubscriptionForm(props){
+export default function SubscriptionForm(props) {
+    const { onSubmit, closeInput, formData, handleChangeInput, handleResetForm } = props
+    const { handleAddSubscription } = useAuth()
 
-    const { onSubmit, closeInput } = props
-
-    const [ formData, setFormData ] = useState({
-        name: '',
-        category: 'Web Services',
-        cost: '',
-        currency: 'INR',
-        billingFrequency: 'Monthly',
-        nextBillingData: '',
-        paymentMethod: 'Credit Card',
-        startDate: '',
-        renewalType: '',
-        notes: '',
-        status: 'Active'
-    })
-
-    function handleChangeInput(e){
-        const newData = { 
-            ...formData,
-            [e.target.name]: e.target.value
-         }
-         setFormData[newData]
-    }
 
     function handleFormSumbit(e) {
         e.preventDefault() // prevents the random as behavior of reloading the webpage
-        onSubmit()
+        handleAddSubscription(formData)
+        handleResetForm()
+        closeInput()
     }
 
 
-    return(
+    return (
         <section>
             <h2>Add a new subscription</h2>
 
@@ -56,9 +38,11 @@ export default function SubscriptionForm(props){
                         })}
                     </select>
                 </label>
+
+
                 <label>
                     <span>Cost</span>
-                    <input value={formData.cost} onChange={handleChangeInput} type="number" name="cost" step="0.01" placeholder="e.g. ₹200.00" required />
+                    <input value={formData.cost} onChange={handleChangeInput} type="number" name="cost" step="0.01" placeholder="e.g. 200.00" required />
                 </label>
 
                 <label>
@@ -127,5 +111,3 @@ export default function SubscriptionForm(props){
         </section>
     )
 }
-
-    
