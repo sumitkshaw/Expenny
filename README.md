@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 💰 Expenny - Subscription Tracker
 
-## Getting Started
+Expenny is a **full-stack subscription tracker** built with **Next.js, Firebase, and FantaCSS**. It helps users efficiently manage their subscriptions with real-time updates, secure authentication, and an intuitive UI.
 
-First, run the development server:
+## 🚀 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1️⃣ **Seamless Navigation** - Powered by Next.js App Router for a smooth user experience.  
+2️⃣ **Secure Authentication** - Firebase Authentication for easy & safe logins.  
+3️⃣ **Real-time Data Sync** - Firestore Database keeps your subscription data up-to-date.  
+4️⃣ **Add, Edit & Delete** - Manage subscriptions dynamically in just a few clicks.  
+5️⃣ **User-friendly UI** - Styled with FantaCSS for a sleek & modern look.  
+6️⃣ **Mobile Responsive** - Fully optimized for all screen sizes.  
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📂 Tech Stack
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- **Frontend:** Next.js (App Router) + Tailwind CSS + FantaCSS  
+- **Backend:** Firebase Authentication & Firestore Database  
+- **Deployment:** Vercel  
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🚀 Deployment
 
-## Learn More
+Expenny is deployed on **Vercel**
 
-To learn more about Next.js, take a look at the following resources:
+## 🎯 Future Enhancements
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+✅ Subscription analytics & reports  
+✅ Payment reminders & notifications  
+✅ Multi-user collaboration  
+✅ Dark mode support  
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## 📜 License
+This project is licensed under the **MIT License**.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+🚀 **Expenny - Take control of your subscriptions today!**
+
