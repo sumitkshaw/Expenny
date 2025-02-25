@@ -29,7 +29,7 @@ export default function SubscriptionsDisplay(props) {
                             <p><i>{category}</i></p>
 
                             <div className="sub-cost">
-                                <h2>${cost}</h2>
+                                <h2>₹{cost}</h2>
                                 <p>{currency}</p>
                             </div>
                             <small>per {billingFrequency}</small>

@@ -140,7 +140,7 @@ export const calculateSubscriptionMetrics = (subscriptions) => {
 // Helper function to format object keys into readable labels
 export const formatKey = (key) => {
     return key
-        .replace(/([A-Z])/g, " $1") // Add space before capital letters
+        .replace(/([A-Z])/g, " ₹1") // Add space before capital letters
         .replace(/^./, (str) => str.toUpperCase()) // Capitalize first letter
         .replace("Upcoming Billing Dates", "Upcoming Bills (Next 7 Days)")
         .replace("Trial Ending Soon", "Trials Ending Soon")
