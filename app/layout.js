@@ -33,7 +33,7 @@ export default function RootLayout({ children }) {
             <p>|</p>
             <button disabled>Install app</button>
           </div>
-          <p className="copyright">© Copyright 2024-2025, Sumit Shaw.<br />All rights reserved.</p>
+          <p className="copyright">© Copyright 2024-2025, Vaishnavi Tiwari❤️✨.<br />All rights reserved.</p>
         </div>
         <div>
           <p>Facing issues? <a>Get help</a></p>
